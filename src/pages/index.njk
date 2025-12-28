@@ -1,11 +1,11 @@
 ---
 layout: base
 permalink: /index.html
-title: 'Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: 'Adam Kucharczyk'
+description: 'Adam Kucharczyk - szkolenia IT'
 blog:
   title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+  intro: "Co mnie zainteresowało, czym się zajmowałem"
 ---
 
 <div class="wrapper">
@@ -13,24 +13,23 @@ blog:
     <div class="section__inner flow region">
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
     </div>
-    {% svg "divider/waves", null, "divider" %}
+    {% svg "divider/waves",
+    null,
+    "divider" %}
   </header>
 
   <article class="full | region">
     <div class="prose wrapper flow">
-      <h2 id="an-eleventy-starter">An Eleventy starter</h2>
+      <h2 id="an-eleventy-starter">AI dla specjalistów IT</h2>
       <p>
-        Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It
-        incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for
-        layout. The goal is to develop frontends that provide a great experience across all devices,
-        connection speeds, and usage contexts.
+        Jesteś seniorem i chcesz poznać narzędzia, które pozwolą Ci przenieść swoje seniority do świata wspomaganego AI. Zastanawiasz się, jak wykorzystać doświadczenie i wiedzę w nowym kontekście zawodowym, w projektach, w których dużą część kodowania wykonuje maszyna?
       </p>
       <p>
-        <strong>This is <a href="https://github.com/madrilene/eleventy-excellent/">version {{ pkg.version }}</a>.</strong> I keep a
-        <a href="https://github.com/madrilene/eleventy-excellent/tree/v1">branch of v1</a>,
-        <a href="https://github.com/madrilene/eleventy-excellent/tree/v2">v2</a> and <a href="https://github.com/madrilene/eleventy-excellent/tree/v3">v3</a>. I  tried to <a href="/get-started/#docs-lol">document most features and methodologies</a>.
+        Zapraszam na spotkania i kursy, które pokazują, że AI nie wypycha z rynku pracy - ono powoduje, że Twoje seniority jest <strong>jeszcze cenniejsze</strong>.
       </p>
-      <p><strong>Have fun</strong> and let me know if you find any issues or have ideas for improvements!</p>
+      <p>
+        I może być lepiej płatne...  
+      </p>
     </div>
   </article>
 
@@ -43,10 +42,10 @@ blog:
       <div class="feature |  region region-space-l">
         <custom-masonry layout="50-50">
           {% set itemList = collections.allPosts %}
-					{% asyncEach item in itemList.slice(0, 4) %}
-            {% set headingLevel = "h3" %}
-						{% include "partials/card-blog.njk" %}
-					{% endeach %}
+          {% asyncEach item in itemList.slice(0, 4) %}
+          {% set headingLevel = "h3" %}
+          {% include "partials/card-blog.njk" %}
+          {% endeach %}
         </custom-masonry>
       </div>
     </div>

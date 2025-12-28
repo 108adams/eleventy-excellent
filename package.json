@@ -1,8 +1,9 @@
 {
-  "name": "eleventy-excellent",
-  "version": "4.5.0",
-  "description": "Eleventy starter built around the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "name": "adam-kucharczyk-main-site",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Adam Kucharczyk's site, based on eleventy-excellent",
+  "author": "Adam Kucharczyk",
   "license": "ISC",
   "type": "module",
   "engines": {
@@ -26,7 +27,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/108adams/adamkucharczyk.pl"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
