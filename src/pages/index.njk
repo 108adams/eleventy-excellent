@@ -2,52 +2,64 @@
 layout: base
 permalink: /index.html
 title: 'Adam Kucharczyk'
-description: 'Adam Kucharczyk - szkolenia IT'
+description: 'Adam Kucharczyk - AI Architecture for Senior Developers'
 blog:
   title: 'Blog'
   intro: "Co mnie zainteresowało, czym się zajmowałem"
 ---
 
-<div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-primary)">
-    <div class="section__inner flow region">
-      <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
-    </div>
-    {% svg "divider/waves",
-    null,
-    "divider" %}
-  </header>
+<section class="hero">
+  <div class="hero-label">Senior IT Architect</div>
+  <h1>{{ title }}</h1>
+  <div class="hero-subtitle">AI Architecture for Senior Developers</div>
+  <p class="hero-description">
+    20+ years of experience designing enterprise systems. Now teaching advanced developers
+    how to architect AI-powered applications that scale.
+  </p>
+  <a href="/about/" class="cta-primary"><span>Join Next Course</span></a>
+</section>
 
-  <article class="full | region">
-    <div class="prose wrapper flow">
-      <h2 id="an-eleventy-starter">AI dla specjalistów IT</h2>
-      <p>
-        Jesteś seniorem i chcesz poznać narzędzia, które pozwolą Ci przenieść swoje seniority do świata wspomaganego AI. Zastanawiasz się, jak wykorzystać doświadczenie i wiedzę w nowym kontekście zawodowym, w projektach, w których dużą część kodowania wykonuje maszyna?
-      </p>
-      <p>
-        Zapraszam na spotkania i kursy, które pokazują, że AI nie wypycha z rynku pracy - ono powoduje, że Twoje seniority jest <strong>jeszcze cenniejsze</strong>.
-      </p>
-      <p>
-        I może być lepiej płatne...  
-      </p>
-    </div>
-  </article>
+<section class="services">
+  <div class="section-label">What I Offer</div>
 
-  <section class="full | region">
-    <div class="prose wrapper flow">
-      <h2>{{ blog.title }}</h2>
-      {% if blog.intro %}
-        <p>{{ blog.intro }}</p>
-      {% endif %}
-      <div class="feature |  region region-space-l">
-        <custom-masonry layout="50-50">
-          {% set itemList = collections.allPosts %}
-          {% asyncEach item in itemList.slice(0, 4) %}
-          {% set headingLevel = "h3" %}
-          {% include "partials/card-blog.njk" %}
-          {% endeach %}
-        </custom-masonry>
-      </div>
-    </div>
-  </section>
-</div>
+  <div class="service-card featured">
+    <div class="service-badge">⟡ Primary Focus</div>
+    <h3>Advanced AI Courses</h3>
+    <p>
+      Hands-on training for senior developers and architects. Learn to design AI-powered
+      systems from someone who's built them at scale for 20 years.
+    </p>
+    <a href="/about/" class="service-link">View Course Schedule</a>
+  </div>
+
+  <div class="service-card">
+    <h3>Architecture Consulting</h3>
+    <p>
+      Strategic guidance for businesses navigating AI integration. Technical decisions
+      that align with your business goals and team capabilities.
+    </p>
+    <a href="/contact/" class="service-link">Book Consultation</a>
+  </div>
+</section>
+
+<section class="credentials">
+  <div class="credential-item"><strong>Experience:</strong> 20+ years in enterprise IT architecture</div>
+  <div class="credential-item"><strong>Specialization:</strong> AI systems design and implementation</div>
+  <div class="credential-item"><strong>Audience:</strong> Senior developers and technical leaders</div>
+</section>
+
+<section class="region">
+  <div class="section-label">{{ blog.title }}</div>
+  {% if blog.intro %}
+    <p style="margin-bottom: 3rem; color: var(--color-text-accent);">{{ blog.intro }}</p>
+  {% endif %}
+  <div class="feature region region-space-l">
+    <custom-masonry layout="50-50">
+      {% set itemList = collections.allPosts %}
+      {% asyncEach item in itemList.slice(0, 4) %}
+      {% set headingLevel = "h3" %}
+      {% include "partials/card-blog.njk" %}
+      {% endeach %}
+    </custom-masonry>
+  </div>
+</section>

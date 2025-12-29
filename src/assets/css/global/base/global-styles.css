@@ -12,15 +12,15 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: var(--font-base);
-  font-size: var(--size-step-0);
-  font-weight: var(--font-regular);
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
   font-size-adjust: from-font;
-  line-height: var(--leading-standard);
+  line-height: 1.7;
   color: var(--color-text);
   background-color: var(--color-bg);
   accent-color: var(--color-primary);
-  letter-spacing: var(--tracking);
+  letter-spacing: normal;
 }
 
 main {

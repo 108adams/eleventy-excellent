@@ -37,3 +37,9 @@
     local(''),
     url('/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2') format('woff2');
 }
+
+/* Spectral - Serif font for body text */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&display=swap');
+
+/* IBM Plex Mono - Monospace font for labels and UI */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
