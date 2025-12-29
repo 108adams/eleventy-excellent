@@ -50,6 +50,25 @@
   transition: all 0.3s ease;
   display: block;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-post-card .card-main-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.blog-post-card .card-main-link:focus {
+  outline: none;
+}
+
+.blog-post-card:focus-within {
+  background: color-mix(in oklab, var(--color-bg-accent-2) 50%, transparent);
+  border-left-color: var(--color-text-strong);
 }
 
 .blog-post-card:hover {
