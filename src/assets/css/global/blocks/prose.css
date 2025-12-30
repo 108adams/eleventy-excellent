@@ -56,7 +56,7 @@
 }
 
 .prose :is(p, li, dl, blockquote) {
-  max-inline-size: 60ch;
+  max-inline-size: fit-content;
   text-wrap: pretty;
 }
 

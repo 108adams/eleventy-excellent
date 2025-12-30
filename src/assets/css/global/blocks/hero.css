@@ -44,7 +44,7 @@
 .hero-description {
     font-size: 18px;
     color: var(--color-text-accent);
-    max-width: 600px;
+    max-inline-size: fit-content;
     margin-bottom: 0.7em;
     line-height: 1.8;
 }
