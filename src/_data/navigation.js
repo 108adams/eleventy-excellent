@@ -19,10 +19,6 @@ export default {
       url: '/privacy/'
     },
     {
-      text: 'Dostępność',
-      url: '/accessibility/'
-    },
-    {
       text: 'Kontakt',
       url: '/contact/'
     }
